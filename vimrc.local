@@ -21,6 +21,8 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 " 接口与实现快速切换
 Plugin 'derekwyatt/vim-fswitch'
+" 语法检查
+Plugin 'vim-syntastic/syntastic'
 
 
 " original repos on github
