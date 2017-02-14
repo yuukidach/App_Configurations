@@ -55,17 +55,39 @@ set lines=35 columns=110 " 设置窗口大小
 set cursorline	    	 " 高亮光标行
 set laststatus=2	 " 总是显示状态栏
 let g:Powerline_colorscheme='solarized256'  " 设置状态栏主题风格
-
 "set foldmethod=indent
 set foldmethod=syntax	 " 基于缩进或语法进行代码折叠
 set nofoldenable	 " 启动 vim 时关闭折叠代码
+nnoremap <Leader>lw <C-W>l " 跳到右方窗口
+nnoremap <Leader>hw <C-W>h " 跳到左方窗口
+nnoremap <Leader>kw <C-W>k " 跳到上方窗口
+nnoremap <Leader>jw <C-w>j " 跳到下方窗口
 
-" CtrlP Configurations
+
+
+
+" CtrlP configurations
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" NERDTree Configurations
+
+
+
+" NERDTree configurations
 nmap <F2> :NERDTreeToggle <CR>
 
 " 通过vim-fswitch在 .cpp 和 .h 间切换
 nmap <silent> <Leader>sw :FSHere<cr>
+
+
+
+
+" syntastic configurations
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
