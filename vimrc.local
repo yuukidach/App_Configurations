@@ -36,6 +36,8 @@ Plugin 'vim-scripts/DfrankUtil'
 Plugin 'vim-scripts/indexer.tar.gz'
 " 缩进关联
 Plugin 'nathanaelkane/vim-indent-guides'
+" 快速开关注释
+Plugin 'scrooloose/nerdcommenter'
 
 
 " original repos on github
@@ -185,3 +187,5 @@ let g:tagbar_type_cpp = {
 " 默认 --c++-kinds=+p+l，重新设置为 --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v
 " 默认 --fields=+iaS 不满足 YCM 要求，需改为 --fields=+iaSl
 let g:indexer_ctagsCommandLineOptions="--c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
+" 设定.indexer_files文件路径
+let g:indexer_indexerListFilename = '~/.vim/bundle/indexer.tar.gz/.indexer_files'
