@@ -1,2 +1,2 @@
-# App_Configurations
+# App Configurations
 Selfused softwares' configurations.
